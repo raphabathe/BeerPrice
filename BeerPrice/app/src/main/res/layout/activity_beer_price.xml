@@ -22,14 +22,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Digite o valor da cerveja 1"/>
+        android:layout_marginLeft="16dp"
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:text="Valor da cerveja 1"
+        />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:inputType="numberDecimal"
         android:id="@+id/valor_cerveja_1"
-        android:keyboardNavigationCluster="true"
         />
 
 
@@ -37,12 +42,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Quandidade ml"/>
+        android:layout_marginLeft="16dp"
+        android:text="Quantidade em ml"/>
 
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:inputType="numberDecimal"
         android:id="@+id/ml_cerveja_1"
         />
@@ -51,25 +59,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Digite o valor da cerveja 2"/>
+        android:layout_marginLeft="16dp"
+
+        android:text="Valor da cerveja 2"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:id="@+id/valor_cerveja_2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Quandidade ml"/>
+        android:text="Quantidade (ml)"
+        android:layout_marginLeft="16dp"
+        />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:id="@+id/ml_cerveja_2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         />
 
 
@@ -77,6 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calcular"
+        android:layout_marginLeft="16dp"
         android:onClick="calcular"
         />
 
@@ -84,14 +101,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Cerveja com melhor custo Benefício"/>
+        android:text="Cerveja com melhor custo Benefício"
+        android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
         android:inputType="numberDecimal"
         android:id="@+id/valor_melhor_custo"
+        android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         />
 
