@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">BeerPrice</string>
-        <string-array name="spinner_list">
-            <item>200ml</item>
-            <item>350ml</item>
-            <item>600ml</item>
-        </string-array>
-    </resources>
+    <string-array name="spinner_list">
+        <item>200ml</item>
+        <item>350ml</item>
+        <item>600ml</item>
+    </string-array>
+</resources>

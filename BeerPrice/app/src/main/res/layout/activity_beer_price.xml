@@ -23,8 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="16dp"
-        android:textStyle="italic"
         android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
         android:text="Valor da cerveja 1"
         />
 
@@ -43,6 +44,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
         android:text="Quantidade em ml"/>
 
 
@@ -60,7 +63,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="16dp"
-
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
         android:text="Valor da cerveja 2"/>
 
     <EditText
@@ -75,6 +79,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
         android:text="Quantidade (ml)"
         android:layout_marginLeft="16dp"
         />
@@ -94,30 +100,14 @@
         android:layout_height="wrap_content"
         android:text="Calcular"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:onClick="calcular"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/branco"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Cerveja com melhor custo Benefício"
-        android:layout_gravity="center"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:fontFamily="casual"
-        android:gravity="center"
-        android:textColor="@color/colorAccent"
-        android:inputType="numberDecimal"
-        android:id="@+id/valor_melhor_custo"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
-        />
+
 
 
 

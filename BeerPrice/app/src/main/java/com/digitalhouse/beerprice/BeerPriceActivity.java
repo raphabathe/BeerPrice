@@ -2,6 +2,7 @@ package com.digitalhouse.beerprice;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,7 +22,6 @@ public class BeerPriceActivity extends AppCompatActivity {
     private TextView valor2;
     private TextView ml1;
     private TextView ml2;
-    private TextView melhorCusto;
 
 
     @Override
@@ -35,7 +35,6 @@ public class BeerPriceActivity extends AppCompatActivity {
         valor2 = findViewById(R.id.valor_cerveja_2);
         ml1= findViewById(R.id.ml_cerveja_1);
         ml2 = findViewById(R.id.ml_cerveja_2);
-        melhorCusto = findViewById(R.id.valor_melhor_custo);
 
     }
 
@@ -44,13 +43,23 @@ public class BeerPriceActivity extends AppCompatActivity {
     public void calcular(View view){
        float preco100Ml1 = ((Float.parseFloat(valor1.getText().toString())/Float.parseFloat(ml1.getText().toString())*100));
        float preco100Ml2 = ((Float.parseFloat(valor2.getText().toString())/Float.parseFloat(ml2.getText().toString()))*100);
+       String melhorCusto = "";
        if (preco100Ml1 > preco100Ml2){
-           melhorCusto.setText("Cerveja 2") ;
+           melhorCusto = "Cerveja 2" ;
        }else if (preco100Ml2 > preco100Ml1){
-           melhorCusto.setText("Cerveja 1") ;
+           melhorCusto = "Cerveja 1";
        }else {
-           melhorCusto.setText("Tanto faz") ;
+           melhorCusto = "Tanto faz";
        }
+
+        Bundle bundle = new Bundle();
+        bundle.putString("resultado",melhorCusto);
+        Intent intencaoCalcular = new Intent(this, SegundaActivity.class);
+        intencaoCalcular.putExtras(bundle);
+        startActivity(intencaoCalcular);
+
     }
+
+
 
 }
